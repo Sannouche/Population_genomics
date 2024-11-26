@@ -1,2 +1,2 @@
 # Population_genomics
-Script for Population genomics analysis
+Scripts for Population genomics analysis
