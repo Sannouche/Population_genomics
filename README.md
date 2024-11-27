@@ -13,3 +13,10 @@ In 01_Structure, you can find scripts that helped to do:
 - the paitrwise Fst calculation (Pairwise_FST.sh)
 
 And the figure created in the article (Figure_Structure.R)
+
+In 02_Diversity, you can find scripts to:
+- Calculate Heterozygosity (Heterozygosity.sh) and compare populations (Heterozygosity.R)
+- Calculate Tajima's D (Tajima_D.sh) and compare populations with manhattan plot (TajimaD.R)
+- Calculate Nucleotide diversity Pi with Pixy (https://pixy.readthedocs.io/en/latest/arguments.html) (Diversity_pixy.sh)
+
+Code for the figure in the article (Figure_Diversity.R)
