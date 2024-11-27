@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Prunned SNPs with LD value
+# Run this script from Population_Structure_final directory using :
+# srun -c 4 --mem=10G -p small --time=1-00:00:00 -J prune -o 99_log/prunning_%j.log 00_vcf/03_pruned/LD_pruning.sh $VCF &
+
+#VARIABLES
+OUT_DIR="00_vcf/03_pruned"
+
+VCF=$1
+
+CPU=4
+
+#MODULE
+module load plink
+
+# Perform linkage pruning
+plink --vcf $VCF --double-id --allow-extra-chr \
+--set-missing-var-ids @:# \
+--indep-pairwise 1000 100 0.5 --out $OUT_DIR/"$(basename -s .vcf.gz $VCF)"_pruned
