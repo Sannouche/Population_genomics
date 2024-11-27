@@ -12,7 +12,7 @@ In 01_Structure, you can find scripts that helped to do:
 - the PCA analysis (pca.R)
 - the paitrwise Fst calculation (Pairwise_FST.sh)
 
-And the figure created in the article (Figure_Structure.R)
+Code for the figure in the article (Figure_Structure.R)
 
 In 02_Diversity, you can find scripts to:
 - Calculate Heterozygosity (Heterozygosity.sh) and compare populations (Heterozygosity.R)
