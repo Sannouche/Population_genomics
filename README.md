@@ -30,3 +30,13 @@ In 03_Cline_analysis, you can find scripts to:
 - Filter outlier alleles by 50kb window and neutral alleles (03_AFD_cline_analysis.R)
 - Calculate a quantitative model with hzar (https://onlinelibrary.wiley.com/doi/10.1111/1755-0998.12209) by outlier and neutral SNPs (cline_analysis.R)
 - Compute results from hzar and identify the best overall model (04_cline_model.R)
+
+For the 04_Demography_analysis, we used Xavier Dallaire angsd pipeline (https://github.com/xav9536/angsd_pipeline) to simulate our six scenarios with fastsimcoal2 v2.7. Scripts presented here were used to:
+- Select the best run of each model based on likelihood (01_Best_Run_Selection.R)
+- Create a folder by model for the best run (02_Transform_Run.sh)
+- Calculate the AIC for each of those best runs (03_AIC.R)
+- Choose the best scenario based on the AIC values (04_Choose_bestscenar.R)
+- Create a matrix with all parameters of interest for every run of the best model (05_assess_migration.R)
+- Do the same step for bootstrapping results (06_Select_bestrun_bootstrap.R, 07_Create_migration_parameter.R)
+
+We also add scripts to compare the models visually (model_selection.R) and represent the bootstrapping parameters (Bootstrapping_parameters.R)
